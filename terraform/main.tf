@@ -246,17 +246,6 @@ resource "aws_instance" "java_app" {
               #!/bin/bash
               apt update -y
               apt install -y git openjdk-17-jdk maven 
-              apt install -y git openjdk-17-jdk maven 
-                # Install dependencies
-              apt install -y unzip curl
-
-              # Download AWS CLI v2
-              curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
-
-              # Unzip and install
-              unzip /tmp/awscliv2.zip -d /tmp
-              /tmp/aws/install
-              apt install -y git openjdk-17-jdk maven
                 # Install dependencies
               apt install -y unzip curl
 
