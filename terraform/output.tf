@@ -1,4 +1,5 @@
-output "ec2_public_ip" {
-  description = "Public IP of the EC2 instance"
-  value = "http://${aws_instance.java_app.public_ip}:8080/hello"
+output "elb_url" {
+  description = "Public HTTP URL of the Load Balancer"
+  value       = "http://${aws_elb.app_elb.dns_name}/hello"
 }
+
