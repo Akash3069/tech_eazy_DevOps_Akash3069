@@ -26,11 +26,11 @@ variable "instance_type" {
 variable "mykey" {
   type        = string
   description = "AWS Key Pair name"
-  default = "mykey"
+  default = ""
  
 }
 variable "ami_id" {
     type = string
-     default = "ami-02d26659fd82cf299" 
+     default = "" 
   
 }
