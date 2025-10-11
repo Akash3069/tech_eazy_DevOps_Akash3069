@@ -1,13 +1,26 @@
 
 variable "region" {
   type    = string
-  default = ""
+  default = "ap-south-1"
+}
+
+variable "instance_count" {
+  description = "Number of EC2 instances"
+  type        = number
+  default     = 2
+}
+
+
+variable "bucket_name" {
+  description = "S3 bucket name"
+  type        = string
+  default = "myglobuniqbuk69"
 }
 
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = ""
+  default     = "t2.micro"
 }
 
 variable "mykey" {
